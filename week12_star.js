@@ -11,10 +11,10 @@ function sendComment() {
   const newUrl = document.getElementById("url").value;
   const newComment = document.getElementById("comment").value;
 
-  const validatedName = validatedName(newName);
+  const validateName = validatedName(newName);
   const validatedComment = checkSpam(newComment);
 
   document.getElementById(
     "saidComment"
-  ).innerHTML = `${validatedName} <img src=${newUrl} /> ${validatedComment}`;
+  ).innerHTML = `${validateName} <img src=${newUrl} /> ${validatedComment}`;
 }
